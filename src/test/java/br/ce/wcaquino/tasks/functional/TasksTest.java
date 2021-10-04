@@ -16,7 +16,7 @@ public class TasksTest {
 	public WebDriver acessarAplicacao() {
 		System.setProperty("webdriver.chrome.driver","/home/brunoroman/dev/devops/java/seleniumDrivers/chromedriver");
 		WebDriver driver = new ChromeDriver();
-		driver.navigate().to("http://localhost:8080/tasks");
+		driver.navigate().to("http://192.168.200.127:8080/tasks");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}

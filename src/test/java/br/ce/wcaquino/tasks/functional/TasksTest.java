@@ -41,7 +41,7 @@ public class TasksTest {
 			
 			String message = driver.findElement(By.id("message")).getText();
 			
-			Assert.assertEquals("Succ!", message);
+			Assert.assertEquals("Success!", message);
 		} finally {
 			driver.quit();
 		}
